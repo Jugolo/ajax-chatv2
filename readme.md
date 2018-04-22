@@ -1,4 +1,4 @@
-AJAX Chat Standalone
+AJAX Chat Standalone V2
 ====================
 
 This is the standalone version of Blueimp's AJAX Chat. If you are looking for a version to integrate with your forum, select a different branch.
@@ -63,15 +63,3 @@ Features
 - Well commented Source Code
 - Developed with Security as integral part - built to prevent Code injections, SQL injections, Cross-site scripting (XSS), Session stealing and other attacks
 - Tested successfully with Google Chrome, Firefox, Opera and Safari - built to work with all modern browsers :)
-
-
-
-Help
-----
-Essential documentation is contained in the attached readme files
-
-For more documentation consult the github wiki: https://github.com/Frug/AJAX-Chat/wiki
-
-For support questions use google groups: https://groups.google.com/forum/#!forum/ajax-chat
-
-To report bugs use github issues: https://github.com/Frug/AJAX-Chat
