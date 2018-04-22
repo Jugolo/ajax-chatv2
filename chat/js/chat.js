@@ -163,7 +163,6 @@ var ajaxChat = {
 		this.dirs = {};
 		this.dirs['emoticons'] 	= this.baseURL+'img/emoticons/';
 		this.dirs['sounds']		= this.baseURL+'sounds/';
-		this.dirs['flash']		= this.baseURL+'flash/';
 	},
 
 	initSettings: function() {
@@ -335,16 +334,11 @@ var ajaxChat = {
 	setUnloadHandler: function() {
 		// Make sure finalize() is called on page unload:
   		var onunload = window.onunload;
-		if(typeof onunload !== 'function') {
-			window.onunload = function() {
-				ajaxChat.finalize();
-			};
-		} else {
-			window.onunload = function() {
-				ajaxChat.finalize();
+		window.onunload = function(){
+			ajaxChat.finalize();
+			if(typeof onunload === "function")
 				onunload();
-			};
-		}
+		};
 	},
 
 	updateDOM: function(id, str, prepend, overwrite) {
